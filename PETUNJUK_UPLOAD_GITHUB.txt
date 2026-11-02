@@ -1,0 +1,40 @@
+PANDUAN UPLOAD DASHBOARD RPM / SALESPULSE V8 KE GITHUB PAGES
+Repository yang dituju: https://github.com/alfianwahyu63-bot/Rpm
+
+PENTING: Paket ini disiapkan untuk diunggah; belum di-push ke GitHub Anda.
+
+CARA UPLOAD MANUAL
+1. Backup JSON di dashboard yang lama, terutama bila sudah ada data penjualan.
+2. Ekstrak file ZIP ini.
+3. Buka repository Rpm -> Code -> Add file -> Upload files.
+4. Upload ISI hasil ekstrak ke folder akar (root) repository: index.html,
+   sw.js, manifest.webmanifest, JSZip-LICENSE.txt, PETUNJUK_UPLOAD_GITHUB.txt,
+   .nojekyll, dan folder icons dengan dua gambar icon.
+   PERHATIAN: jangan upload file ZIP sebagai satu file; GitHub tidak otomatis
+   mengekstrak ZIP menjadi berkas situs. index.html WAJIB ada di akar.
+5. Ganti file yang sudah ada dengan nama yang sama, lalu Commit changes.
+6. Pastikan Settings -> Pages -> Build and deployment -> Deploy from a branch.
+   Branch: main (atau branch sumber aktif), Folder: /(root), Save.
+7. Jika Pages aktif pada main/(root), perkiraan URL situs:
+   https://alfianwahyu63-bot.github.io/Rpm/
+   (URL tersebut belum diverifikasi aktif).
+8. Jika tampilan lama masih muncul, muat ulang halaman (dan tutup-buka aplikasi
+   PWA jika telah di-install). Service Worker terbaru mengambil HTML jaringan.
+
+PERINGATAN DATA
+- Data dan pengaturan aplikasi disimpan di localStorage browser per origin/URL.
+- Memindahkan situs dari file HTML lokal ke GitHub Pages TIDAK otomatis
+  memindahkan data penjualan. Gunakan Backup JSON dari versi lama, lalu
+  Restore JSON pada versi situs GitHub Pages jika diperlukan.
+- Berkas ini tidak mengunggah data penjualan Anda ke GitHub. Upload file
+  laporan pribadi ke repository publik hanya jika memang boleh dipublikasikan.
+- Backup JSON tiap bulan dan sebelum mengganti perangkat atau menghapus cache.
+- Layanan GitHub Pages memerlukan jaringan untuk publikasi pertama kali.
+
+FITUR V8
+- 5 tema dan 3 model UI; judul dan keterangan editable.
+- Impor target dan katalog PLU dari Excel.
+- PLU/deskripsi/HPP per minggu; input QTY Senin–Minggu satu tabel.
+- Point: 50% Achievement QTY + 50% Achievement NS.
+- Status DIATAS TF / DIBAWAH TF dihitung dari TOTAL POINT dibanding TF harian.
+- Rekap dan riwayat bulanan, backup JSON.
