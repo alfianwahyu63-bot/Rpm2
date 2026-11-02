@@ -4,7 +4,7 @@
   "description": "Dashboard SalesPulse editable: nama aplikasi, judul, keterangan, 5 tema, riwayat bulanan, point QTY 50% NS 50% dan Time Factor.",
   "start_url": "./index.html",
   "scope": "./",
-  "display": "standalone",
+  "display": "fullscreen",
   "background_color": "#f3f6fb",
   "theme_color": "#101b37",
   "lang": "id",
